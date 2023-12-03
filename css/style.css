@@ -1,0 +1,324 @@
+@charset "utf-8";
+/* CSS Document */
+header {
+  width: 100%;
+	height: 75px; 
+	position: fixed; 
+	left: 5%; 
+	top: 2%;
+	z-index: 100;
+	font-size: 18px;
+	font-weight: 600;
+	outline-color: white;
+	border-radius: 12px;
+	background: rgba(255,255,255,.2);
+	backdrop-filter: blur(20px);
+	border: 1px solid white;
+	box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+.logo {
+    width: 17%; height: auto; display: flex; align-items: center
+}
+/*menu*/
+.menu {
+    width: 64%; height: auto; display: flex; justify-content: center; align-items: center
+}
+.menu ul {
+   margin: 0; padding: 0; list-style: none; display: flex; justify-content: center
+}
+.menu ul li {
+    padding: 12px 12px; display: block; margin-right: 30px
+}
+.menu ul li a {
+    text-decoration: none; color: #4D4D4D
+}
+.menu ul li:hover {
+   border: 1px solid #F28F8F;
+border-radius: 8px;
+box-shadow: 0 0 20px rgba(242,143,143,.5);
+color: #F28F8F;
+}
+.menu ul li:hover a{
+    color: #F28F8F
+}
+.menu ul li:hover i {
+    	transform: rotate(180deg); transition: all 0.5s
+}
+/*submenu*/
+.menu ul li {
+    position: relative
+}
+.menu ul li .submenu {
+    position: absolute; left: 0; top: 100%; display: flex; flex-direction: column; width: 230px; background-color: rgba(255,255,255,0.6); display: none; border-radius: 8px; z-index: 200
+}
+.menu ul li:hover .submenu {
+    display: block
+}
+.menu ul li .submenu a{
+    color: #4D4D4D; text-transform: none
+}
+.menu ul li .submenu li:hover {
+	border: 1px solid #F28F8F;
+	border-radius: 8px;
+	color: #F28F8F; 
+}
+.menu ul li .submenu li:hover a {
+	color: #F28F8F;
+	text-shadow: 0 0 10px rgba(0,0,0,.05);
+}
+/*login*/
+.login {
+    width: 17%; height: auto; display: flex; justify-content: flex-end
+}
+.login a {
+    text-decoration: none; padding: 12px; margin: auto 8px; border: 1px solid #F28F8F;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(242,143,143,.5);
+color: #F28F8F;
+}
+/*home*/
+#home {
+    width: 100%; min-height: 900px; padding-top: 80px; background: url("../img/Home.png") ; background-repeat: no-repeat; background-position: right top 80%; position: relative; display: flex; align-items: center
+}
+/*services*/
+#services {
+    width: 100%; min-height: 900px; padding-top: 80px
+}
+#services .container {
+    border-radius: 12px; background: rgba(255,255,255,.2); backdrop-filter: blur(20px); border: 1px solid white; box-shadow: 0 0 20px rgba(0,0,0,.1); padding: 10px 30px 30px 30px
+}
+#services h1 {
+    text-align: center; font-size: 40px; margin-bottom: 20px
+}
+#services .khung{
+    width: 100%; height: 300px; position: relative; display: flex; align-items: flex-end
+}
+#services .category {
+    width: 100%; height: 80px;
+    background: linear-gradient(180deg, rgba(139, 162, 228, 0.00) 0%, rgba(139, 162, 228, 0.50) 26.56%, #8BA2E4 89.06%); border-radius: 0px 0px 12px 12px; position: absolute
+}
+#services .category p {
+    text-align: center; font-weight: 600; font-size: 30px; color: white; text-shadow: 0 0 20px #fff
+}
+/*restaurant*/
+#restaurant {
+    width: 100%; min-height: 900px; padding-top: 80px
+}
+#restaurant .container a {
+    text-decoration: none; color: #4D4D4D
+}
+#restaurant .container2 {
+    width: 90%; margin: auto;  border-radius: 12px; background: rgba(255,255,255,.2); backdrop-filter: blur(20px); border: 1px solid white; box-shadow: 0 0 20px rgba(0,0,0,.1); padding-bottom: 30px
+}
+#restaurant .vendor {
+    text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center
+}
+#restaurant .name {
+	font-size: 40px;
+	font-weight: 600;
+	color: #8BA2E4;
+    text-align: center;
+    margin-bottom: 0px
+}
+#restaurant .description {
+	width:80%;
+	text-align: center;
+    margin-top: 10px
+}
+/*make up*/
+#makeup {
+    width: 100%; min-height: 500px; padding-top: 80px
+}
+#makeup .container a {
+    text-decoration: none; color: #4D4D4D
+}
+#makeup .container2 {
+    width: 90%; margin: auto
+}
+#makeup .khung {
+    border-radius: 12px; background: rgba(255,255,255,.2); backdrop-filter: blur(20px); box-shadow: 0 0 20px rgba(0,0,0,.1); padding: 16px
+}
+/*phan mau cho nav */
+
+#makeup .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#makeup .owl-nav [class*='owl-'] {
+	font-size: 50px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: white;
+}
+
+#makeup .owl-nav .owl-next{ position:absolute; right:2%;}
+#makeup .owl-nav .owl-prev{ position:absolute; left:2%;}
+#makeup .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color: #8BA2E4;
+      text-decoration: none; }
+/*photography*/
+#photography {
+    width: 100%; min-height: 900px; padding-top: 80px
+}
+#photography .container a {
+    text-decoration: none; color: #4D4D4D
+}
+#photography .container2 {
+   width: 90%; margin: auto;  border-radius: 12px; background: rgba(255,255,255,.2); backdrop-filter: blur(20px); border: 1px solid white; box-shadow: 0 0 20px rgba(0,0,0,.1); padding-bottom: 30px
+}
+#photography .vendor {
+    text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center
+}
+#photography .name {
+	font-size: 40px;
+	font-weight: 600;
+	color: #8BA2E4;
+    text-align: center;
+    margin-bottom: 0px
+}
+#photography .description {
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
+}
+/*invitations*/
+#invitations {
+    width: 100%; min-height: 700px; padding-top: 80px
+}
+#invitations .container a {
+    text-decoration: none; color: #4D4D4D
+}
+#invitations .container2 {
+    width: 90%; margin: auto
+}
+#invitations .khung {
+    border-radius: 12px; background: rgba(255,255,255,.2); backdrop-filter: blur(20px); box-shadow: 0 0 20px rgba(0,0,0,.1); padding: 16px
+}
+/*phan mau cho nav */
+
+#invitations .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#invitations .owl-nav [class*='owl-'] {
+	font-size: 50px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: white;
+}
+
+#invitations .owl-nav .owl-next{ position:absolute; right:2%;}
+#invitations .owl-nav .owl-prev{ position:absolute; left:2%;}
+#invitations .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color: #8BA2E4;
+      text-decoration: none; }
+/*flower*/
+#flowers {
+    width: 100%; min-height: 500px; padding-top: 80px
+}
+#flowers .container a {
+    text-decoration: none; color: #4D4D4D
+}
+#flowers .container2 {
+    width: 90%; margin: auto
+}
+#flowers .khung {
+    border-radius: 12px; background: rgba(255,255,255,.2); backdrop-filter: blur(20px); box-shadow: 0 0 20px rgba(0,0,0,.1); padding: 12px
+}
+/*dress*/
+#dress {
+	width: 100%; min-height: 700px; padding-top: 80px
+}
+#dress .container a {
+    text-decoration: none; color: #4D4D4D
+}
+#dress .container2 {
+    width: 90%; margin: auto
+}
+#dress .khung {
+    border-radius: 12px; background: rgba(255,255,255,.2); backdrop-filter: blur(20px); box-shadow: 0 0 20px rgba(0,0,0,.1); padding: 16px
+}
+/*phan mau cho nav */
+
+#dress .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#dress .owl-nav [class*='owl-'] {
+	font-size: 50px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: white;
+}
+
+#dress .owl-nav .owl-next{ position:absolute; right:2%;}
+#dress .owl-nav .owl-prev{ position:absolute; left:2%;}
+#dress .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color: #8BA2E4;
+      text-decoration: none; }
+/*inspirations*/
+#inspirations {
+	width: 100%; min-height: 900px; padding-top: 80px
+}
+/* Style the tab */
+#inspirations .tab {
+  
+}
+
+/* Style the buttons inside the tab */
+#inspirations .tab button {
+ background: none;
+	border-bottom: 2px solid white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 3px;
+	margin-left: 25px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+/* Change background color of buttons on hover */
+#projects .tab button:hover {
+  color: #8BA2E4; border-bottom: 2px solid #8BA2E4
+}
+
+/* Create an active/current tablink class */
+#inspirations .tab button.active {
+  color: #8BA2E4; border-bottom: 2px solid #8BA2E4
+}
+
+/* Style the tab content */
+#inspirations .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.box {
+	display: flex; justify-content: space-between; align-items: center
+}
+#photos {
+    border-radius: 12px; background: rgba(255,255,255,.2); backdrop-filter: blur(20px); border: 1px solid white; box-shadow: 0 0 20px rgba(0,0,0,.1); padding: 16px
+}
+#videos {
+    border-radius: 12px; background: rgba(255,255,255,.2); backdrop-filter: blur(20px); border: 1px solid white; box-shadow: 0 0 20px rgba(0,0,0,.1); padding: 16px 
+}
+/*contact*/
+#contact {
+	width: 100%; min-height: 900px; padding-top: 80px
+}
+#contact .vien-chan {
+	padding-bottom: 15px; font-size: 25px; border-bottom: 1px solid #414141
+}
+#contact .container {
+   width: 90%; margin: auto;  border-radius: 12px; background: rgba(255,255,255,.2); backdrop-filter: blur(20px); border: 1px solid white; box-shadow: 0 0 20px rgba(0,0,0,.1); padding: 20px
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+
+
+
+
+.tieu-de {
+    color: #4D4D4D; font-size: 90px
+}
+.text-hong {
+    color: #F28F8F
+}
+.text-xanh {
+    color: #8BA2E4
+}
+.bo-goc {
+    border-radius: 12px
+}
